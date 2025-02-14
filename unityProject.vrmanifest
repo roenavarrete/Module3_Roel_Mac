@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.module3_roel_mac.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\rnavarrete2\\Documents\\GitHub\\Module3_Roel_Mac\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Module3_Roel_Mac [Testing]"
+        }
+      }
+    }
+  ]
+}
