@@ -6,14 +6,11 @@ public class BatteryDetector : MonoBehaviour
 {
     public float batterynumber = 1;
 
-   private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Battery"))
-
-        batterynumber = batterynumber+1;
-
+        {
+            batterynumber = batterynumber + 1;
+        }
     }
-
-
-
 }
