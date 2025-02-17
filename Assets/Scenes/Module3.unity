@@ -11359,6 +11359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a7e20975b77224484d6cb35b34dbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  batteryHolder: {fileID: 74919031}
+  doorOpenY: 5
+  openSpeed: 1
 --- !u!1 &1658462105
 GameObject:
   m_ObjectHideFlags: 0
