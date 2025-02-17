@@ -3,21 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using Valve.VR.InteractionSystem;
-public class batterydisable : MonoBehaviour
+public class BatteryDisable : MonoBehaviour
 {
     public GameObject battery;
-   
-
-
     
     void Start()
     {
 
         this.GetComponent<Interactable>().enabled = true;
     }
-
-
-
 
     private void OnCollisionEnter(Collision collision)
     {
