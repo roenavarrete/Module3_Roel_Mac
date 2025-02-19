@@ -69,7 +69,7 @@ public class EnemyMovement : MonoBehaviour
 
     void MoveToNextWaypoint()
     {
-        if (currentIndex <= waypoints.Count)
+        if (currentIndex < waypoints.Count)
         {
             currentIndex++;
         } else
