@@ -40,12 +40,12 @@ public class EnemyMovement : MonoBehaviour
 
     void MoveToNextWaypoint()
     {
-        if (currentIndex == waypoints.Count)
-        {
-            currentIndex = 0;
-        } else
+        if (currentIndex <= waypoints.Count)
         {
             currentIndex++;
+        } else
+        {
+            currentIndex = 0;
         }
         currentTarget = waypoints[currentIndex];
         navMeshAgent.SetDestination(currentTarget.position);
