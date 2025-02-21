@@ -19,7 +19,7 @@ public class DoorOpener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (batteryDetectorScript.batterynumber >= 3)
+        if (batteryDetectorScript.batterynumber >= 4)
         {
             openDoor();
         }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Battery
   - batteryholder
+  - hand
+  - flashlight
+  - light
   layers:
   - Default
   - TransparentFX
