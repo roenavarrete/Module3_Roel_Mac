@@ -6341,6 +6341,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444129065}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &444773455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1163759719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &446796258
 GameObject:
   m_ObjectHideFlags: 0
@@ -12481,6 +12487,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 71580024c3b629c488ec8926155a05f6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 71580024c3b629c488ec8926155a05f6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 71580024c3b629c488ec8926155a05f6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.45
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 71580024c3b629c488ec8926155a05f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21580,6 +21601,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587520990}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1592235699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1163759719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1594337930
 GameObject:
   m_ObjectHideFlags: 0
@@ -26056,8 +26083,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1915604797}
   - component: {fileID: 1915604796}
-  - component: {fileID: 1915604795}
-  - component: {fileID: 1915604794}
   m_Layer: 0
   m_Name: Exit Collider
   m_TagString: VictoryCollider
@@ -26065,69 +26090,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1915604794
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915604793}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1915604795
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915604793}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1915604796
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -26145,7 +26107,7 @@ Transform:
   m_GameObject: {fileID: 1915604793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.32, y: 0.53, z: -12.012}
+  m_LocalPosition: {x: 16.1, y: 0.53, z: -12.012}
   m_LocalScale: {x: 2.95, y: 5.53125, z: 2.95}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -26301,7 +26263,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1933370180}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.34
   m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -28290,12 +28252,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1629614544}
-  contactDistance: 1
+  contactDistance: 1.5
   winConditionText: {fileID: 37136671}
   alien: {fileID: 1933370180}
+  exitPosition: {fileID: 1915604793}
   endGameSpot: {fileID: 2123435290}
+  disableList:
+  - {fileID: 444773455}
+  - {fileID: 1592235699}
+  - {fileID: 1915604793}
   doorOpenY: 1.2
   openSpeed: 2
+  gameOver: 0
 --- !u!1 &2111287800
 GameObject:
   m_ObjectHideFlags: 0

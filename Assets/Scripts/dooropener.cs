@@ -8,6 +8,7 @@ public class DoorOpener : MonoBehaviour
     private BatteryDetector batteryDetectorScript;
     public float doorOpenY = 5.0f;
     public float openSpeed = 1.0f;
+    private bool gameOver = false;
 
 
     // Start is called before the first frame update
@@ -19,15 +20,15 @@ public class DoorOpener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (batteryDetectorScript.batterynumber >= 4)
+        if (batteryDetectorScript.batterynumber >= 4 && !gameOver)
         {
             openDoor();
+            gameOver = true;
         }
     }
 
     void openDoor()
     {
-        float step = openSpeed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, doorOpenY, transform.position.z), step);
+        transform.position = new Vector3(transform.position.x, doorOpenY, transform.position.z);
     }
 }
