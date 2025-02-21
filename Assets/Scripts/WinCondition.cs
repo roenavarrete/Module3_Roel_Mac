@@ -26,6 +26,7 @@ public class WinCondition : MonoBehaviour
         if (Vector3.Distance(alien.transform.position, transform.position) < contactDistance)
         {
             endGame();
+            winConditionText.text = "You Lose!";
         }
     }
 
