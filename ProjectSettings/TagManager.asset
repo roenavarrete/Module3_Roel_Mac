@@ -9,6 +9,8 @@ TagManager:
   - hand
   - flashlight
   - light
+  - alien
+  - aliendetector
   layers:
   - Default
   - TransparentFX
