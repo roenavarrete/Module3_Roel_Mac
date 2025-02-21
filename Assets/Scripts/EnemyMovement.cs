@@ -13,14 +13,13 @@ public class EnemyMovement : MonoBehaviour
     private bool gotToCheckpoint = false;
 
     private NavMeshAgent navMeshAgent;
-    private FieldOfView fieldOfView;
+    private bool playerInSight = false;
     private bool beingChased = false;
 
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        fieldOfView = GetComponent<FieldOfView>();
         currentTarget = waypoints[currentIndex];
         navMeshAgent.SetDestination(currentTarget.position);
     }
@@ -28,11 +27,11 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player != null && fieldOfView.canSeePlayer) //Player is within alien vision
+        if (player != null && playerInSight) //Player is within alien vision
         {
             navMeshAgent.SetDestination(player.position);
             beingChased = true;
-        } else if (!fieldOfView.canSeePlayer && beingChased) //Player got away
+        } else if (!playerInSight && beingChased) //Player got away
         {
             MoveToClosestWaypoint();
         } else if (Vector3.Distance(transform.position, currentTarget.position) <= 1f && !gotToCheckpoint)
@@ -70,7 +69,7 @@ public class EnemyMovement : MonoBehaviour
 
     void MoveToNextWaypoint()
     {
-        if (currentIndex < waypoints.Count - 1)
+        if (currentIndex < waypoints.Count)
         {
             currentIndex++;
         } else
